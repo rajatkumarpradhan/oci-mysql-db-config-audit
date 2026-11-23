@@ -1,0 +1,10 @@
+{
+  "db_systems": [
+    {"name": "shop-orders", "labels": ["prod"], "backups_enabled": true,
+     "retention_days": 14, "delete_protected": true, "description": "orders primary",
+     "tags": ["team:shop", "env:prod"]},
+    {"name": "sandbox", "labels": ["dev"], "backups_enabled": true,
+     "retention_days": 7, "delete_protected": false, "description": "dev sandbox",
+     "tags": ["team:shop"]}
+  ]
+}

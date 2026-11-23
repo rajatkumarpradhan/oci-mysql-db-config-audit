@@ -1,0 +1,10 @@
+{
+  "db_systems": [
+    {"name": "shop-orders", "labels": ["prod", "mysql"], "backups_enabled": true,
+     "retention_days": 2, "delete_protected": false, "description": "", "tags": []},
+    {"name": "analytics-replica", "labels": ["prod"], "backups_enabled": false,
+     "retention_days": 7, "delete_protected": true, "description": "replica", "tags": ["team:data"]},
+    {"name": "scratch", "labels": ["dev"], "backups_enabled": false,
+     "retention_days": 1, "delete_protected": false, "description": "", "tags": []}
+  ]
+}
